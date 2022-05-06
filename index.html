@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Original Trombones</title>
+    </head>
+
+    <body>
+        <header id="header">
+            <h1>Original Trombones</h1>
+            <nav id="nav-bar">
+                <a class="nav-link" href="#home">HOME</a>
+                <a class="nav-link" href="#features">FEATURES</a>
+                <a class="nav-link" href="#works">WORKING</a>
+                <a class="nav-link" href="#pricing">PRICING</a>
+            </nav>
+        </header>
+
+        <div id="home">
+            <img id="tromb-img0" src="trombone0.jpeg">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <label for="email" id="email-label">Handcrafted, home-made masterpieces</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+                <input type="submit" value="Get Started" id="submit">
+            </form>
+            <img src="trombone1.jpeg" id="tromb-img1"> 
+        </div>
+        
+    
+        <div id="features">
+            <ul>
+                <li>
+                <h5>Premium Materials</h5>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                </li>
+                <li><h5>Fast Shipping</h5>
+                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                </li>
+                <li>
+                <h5>Quality Assurance</h5>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                </li>
+            </ul>      
+        </div>
+
+        <div id="works">
+            <h3>Working Trombone</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+        </div>
+            
+        <div id="pricing">
+            <div id="tenor-trombone" class="price-opt">
+                <ul>
+                <li><strong>Tenor Trombone</strong></li>
+                <li><strong>$600</strong></li><br>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum dolar</li>
+                <li>Lorem ipsum</li>
+                </ul>
+                <button>SELECT</button>
+            </div>
+            <div id="bass-trombone" class="price-opt">
+                <ul>
+                <li><strong>Bass Trombone</strong></li>
+                <li><strong>$900</strong></li><br>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum dolar</li>
+                <li>Lorem ipsum</li>
+                </ul>
+                <button>SELECT</button>
+            </div>
+            <div id="valve-trombone" class="price-opt">
+                <ul>
+                <li><strong>Valve Trombone</strong><li>
+                <li><strong>$1600</strong></li><br>
+                <li>Plays similar to a Trumpet</li>
+                <li>Great for Jazz Bands</li>
+                <li>Lorem ipsum dolar</li>
+                <li>Lorem ipsum</li>
+                </ul>
+                <button>SELECT</button>
+            </div>
+        </div>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+        
+                // Store hash
+                var hash = this.hash;
+        
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+                });
+            } // End if
+            });
+        });
+        </script>
+    </body>
+</html>
