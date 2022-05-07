@@ -261,10 +261,6 @@ ul {
 }
 
 @media(max-width: 600px) {
-    #home {
-        height: 110vh;
-    }
-
     #tromb-img0 {
         width: 12em;
         height: 12em;
