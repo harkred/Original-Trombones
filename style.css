@@ -25,7 +25,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
 }
   
 h1 {
@@ -112,6 +111,7 @@ ul {
     font-weight: lighter;
     width: 15em;
     background-color: #ffffff;
+    padding: 0.1em;
     transition: background-color 0.5s;
 }
 
@@ -140,6 +140,7 @@ ul {
 #submit:hover {
     background-color: #000000;
     color: #ffffff;
+    box-shadow: 0 0 0.4em 0 #343434;
 }
   
 #features {
@@ -162,6 +163,11 @@ ul {
     font-weight: lighter;
     z-index: 1;
     color: #ffffff;
+}
+
+#features ul li h5 {
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
 }
   
 #works {
@@ -191,6 +197,7 @@ ul {
     width: 100vw;
     height: 75vh;
     font-size: 1.2em; 
+    margin-bottom: 1em;
 }
   
 #pricing button {
@@ -206,7 +213,8 @@ ul {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border-radius: 1.8em;
+    border-radius: 2.4em;
+    box-shadow: 0 0 0.4em 0 #343434;
 }
 
 .price-opt ul {
@@ -229,7 +237,7 @@ ul {
 .price-opt button:hover {
     background-color: #000000;
     color: #ffffff;
-    border: solid #ffffff;
+    box-shadow: 0 0 0.4em 0 #343434;
 }
 
 @media(max-width: 910px) {
@@ -294,6 +302,6 @@ ul {
 
 @media(max-width: 400px) {
     #form {
-        transform: scale(0.8);
+        transform: 8em;
     }
 }
