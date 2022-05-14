@@ -301,7 +301,7 @@ ul {
 }
 
 @media(max-width: 400px) {
-    #form {
-        transform: 8em;
+    #tromb-img1 {
+        display: none;
     }
 }
